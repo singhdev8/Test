@@ -5,19 +5,26 @@ import VariantCard from './components/VariantCard';
 import EvidencePanel from './components/EvidencePanel';
 
 interface InterpretationData {
-  gene: string;
+  variant: {
+    originalInput: string;
+    gene: string | null;
+    hgvsCoding: string | null;
+    hgvsGenomic: string | null;
+    chromosome: string | null;
+    position: number | null;
+  };
   interpretation: {
     variant_summary: string;
     clinical_significance: string;
     disease: string | null;
     confidence: number;
+    review_status: string;
     evidence_list: Array<{
       accession: string;
       significance: string;
       review_status: string;
       condition: string | null;
-      submitters: number;
-      last_evaluated: string | null;
+      last_updated: string | null;
     }>;
     warnings: string[];
   };
