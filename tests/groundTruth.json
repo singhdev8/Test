@@ -1,0 +1,16 @@
+[
+  {
+    "variant": "rs121913529",
+    "gene": "KRAS",
+    "expectedSignificance": "Pathogenic",
+    "expectedDisease": "cancer",
+    "minConfidence": 50
+  },
+  {
+    "variant": "rs1799966",
+    "gene": "TP53",
+    "expectedSignificance": "Pathogenic",
+    "expectedDisease": "Li-Fraumeni",
+    "minConfidence": 50
+  }
+]
